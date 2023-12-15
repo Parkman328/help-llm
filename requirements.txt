@@ -1,0 +1,7 @@
+# requirements.txt
+boto3
+botocore
+llama-index
+langchain
+streamlit
+pypdf
