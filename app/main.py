@@ -93,7 +93,7 @@ def load_data():
   """
   with st.spinner(
     text="Loading and indexing your data. This may take a while..."):
-    reader=SimpleDirectoryReader(input_dir="./data", recursive=True)
+    reader=SimpleDirectoryReader(input_dir="./app/data", recursive=True)
     docs=reader.load_data()
 
     index=VectorStoreIndex.from_documents(docs)
