@@ -13,6 +13,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN git clone https://github.com/Parkman328/help-llm.git .
 
+CD app
+
 RUN pip3 install -r ./app/requirements.txt
 
 EXPOSE 8501
