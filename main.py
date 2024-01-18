@@ -75,7 +75,7 @@ from llama_index import SimpleDirectoryReader
 from llama_index import VectorStoreIndex
 
 st.set_page_config(
-  page_title="Qlik Documentation  Vector Embedding Index Q&A over you data 😃 ",
+  page_title="Qlik Product Documentation 📗 Vector Embedding Index Q&A over you data 😃 ",
   page_icon="📗",
   layout="centered",
   initial_sidebar_state="auto",
@@ -93,7 +93,7 @@ def load_data():
   """
   with st.spinner(
     text="Loading and indexing your data. This may take a while..."):
-    reader=SimpleDirectoryReader(input_dir="./app/data", recursive=True)
+    reader=SimpleDirectoryReader(input_dir="./data", recursive=True)
     docs=reader.load_data()
 
     index=VectorStoreIndex.from_documents(docs)
